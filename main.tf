@@ -91,7 +91,7 @@ resource "null_resource" "configure-cat-app" {
   }
   provisioner "remote-exec" {
     inline = [
-      "sudo apot -y update",
+      "sudo apt -y update",
       "sleep 15",
       "sudo apt -y update",
       "sudo apt -y install apache2",
