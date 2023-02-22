@@ -69,8 +69,8 @@ resource "aws_route_table_association" "hashicat" {
 }
 
 resource "aws_eip" "hashicat" {
-  instancce = aws_instance.hashicat.id
-  vpc       = true
+  instance = aws_instance.hashicat.id
+  vpc      = true
 }
 
 resource "aws_eip_association" "hashicat" {
